@@ -1,0 +1,82 @@
+html,body{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+header{
+    background-color: rgb(20, 129, 196);
+    
+}
+nav ul{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    align-items:stretch;
+    place-items: start;
+    padding: 25px;
+    list-style-type: none;
+    margin: 0px;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }
+  h3{
+    color: rgb(20, 129, 196);
+  }
+  .jumbotron{
+    min-width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url('../img/jumbotron.jpg');
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 8px;
+    place-items: strech;  
+}
+.gallery h3{
+  color: rgb(20, 129, 196);
+  text-align: center;
+}
+.escritorio, .mesas, .sillas,
+.sillas_escritorio, .infantil,
+.hogar, .repisas, .varios {
+  min-height:300px;
+  min-width:300px;
+  background-size:cover;  
+  background-position: center;
+}
+.escritorio {
+  background-image: url('../img/escritorios.jpg');
+  
+}
+.mesas {
+  background-image: url('../img/mesas.jpg');
+}
+.sillas {
+  background-image: url('../img/sillas.jpg');  
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sillas_escritorio {
+  background-image: url('../img/sillas_escritorios.PNG');
+  background-size:contain;
+}
+.infantil {
+  background-image: url('../img/infantil.JPG');
+}
+.hogar {
+  background-image: url('../img/hogar.JPG');
+}
+.repisas {
+  background-image: url('../img/repisas.JPG');
+}
+.varios{
+  background-image: url('../img/variados.jpg');
+  background-position: center;
+}

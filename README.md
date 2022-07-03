@@ -1,2 +1,2 @@
 # thewoodart
-##We sell amaizing products with the best design.
+## We sell amaizing products with the best design.
