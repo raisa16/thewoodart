@@ -3,11 +3,11 @@ html,body{
     margin: 0px;
     background-color: white;
 }
-header{
+header, footer{
     background-color: rgb(20, 129, 196);
     
 }
-nav ul{
+.cabecera-pie nav ul{
     display: grid;
     grid-gap: 2px;
     grid-template-columns: auto auto auto auto auto;
@@ -22,8 +22,14 @@ nav ul{
     text-decoration: none;
     color:white;
   }
-  h3{
+  h1,h2,h3{
     color: rgb(20, 129, 196);
+  }
+  main h4{
+    color: rgb(4, 4, 4);
+  }
+  h4 strike{
+    color: rgb(100, 97, 97);
   }
   .jumbotron{
     min-width: 100vh;
@@ -47,8 +53,9 @@ nav ul{
 .hogar, .repisas, .varios {
   min-height:300px;
   min-width:300px;
-  background-size:cover;  
+  background-size:contain;  
   background-position: center;
+  background-repeat: no-repeat;
 }
 .escritorio {
   background-image: url('../img/escritorios.jpg');
@@ -60,7 +67,6 @@ nav ul{
 .sillas {
   background-image: url('../img/sillas.jpg');  
   background-size:contain;
-  background-repeat: no-repeat;
   background-position: center;
 }
 .sillas_escritorio {
@@ -79,4 +85,111 @@ nav ul{
 .varios{
   background-image: url('../img/variados.jpg');
   background-position: center;
+}
+.producto, .registro{
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: auto auto;
+  grid-gap: 8px;
+}
+.imagen, .hotsale{
+  min-height:500px;
+  min-width:300px;
+  background-size:contain;  
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px;
+}
+.imagen{
+  background-image: url('../img/destacado.jpg');
+}
+.detalles{
+  padding: 150px;
+}
+button{
+  background-color: #fbfdfe;
+  color: #00a8e8;
+  border-color: #00a8e8;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-2{
+  background-color: #00a8e8;
+  color: #fbfdfe;
+  padding: 15px 52px;
+}
+.links{
+display:inline-block;
+background-repeat: no-repeat;
+background-size: contain;
+min-width: 150px;
+min-height: 150px;
+margin: 20px;
+}
+.facebook{
+  background-image: url('../img/facebook.PNG');
+}
+.twitter{
+  background-image: url('../img/twitter.PNG');
+  min-width: 150px;
+  min-height: 152px;
+}
+.pin{
+  background-image: url('../img/pin.PNG');
+}
+.hotsale{
+  background-image: url('../img/hotsale.PNG');
+  padding: 0 ;
+  background-position: rightf;
+}
+.adicionales{
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: auto auto auto;
+  grid-gap: 8px;
+  padding-top: 50px;
+}
+.hechoEnMexico, .preciosBajos, .ecoFriendly {
+  min-height:300px;
+  min-width:300px;
+  background-size:contain;  
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
+.hechoEnMexico{
+  background-image: url('../img/hechoenmexico.JPG');
+}
+.preciosBajos{
+  background-image: url('../img/preciosbajos.JPG');
+}
+.ecoFriendly{
+  background-image: url('../img/ecofriendly.JPG');
+}
+footer{
+  padding-bottom: 200px;
+  padding-left:50px;
+  list-style-type: none;
+  grid-gap:50px;
+  
+}
+.columna{
+  padding-left: 0px;
+  color: white;
+  
+  list-style-type: none;
+}
+.columna nav ul{
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: auto;
+  grid-gap: 0px;
+  padding-top: 0px;
+  list-style-type: none;
 }
