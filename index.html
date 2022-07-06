@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheWoodArt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="cabecera-pie">
+    <header class="cabecera">
         <nav class="menus">
             <ul>
                 <li><a href="#"><img src="img/logo.png" alt="Los Tejos" />
@@ -24,31 +27,32 @@
     </header>
     <main>
         <section class="jumbotron"></section>
-        <h3>LINEA DE PRODUCTOS</h3>
-        <section class="gallery">
-            <div class="escritorio"></div>
-            <div class="mesas"></div>
-            <div class="sillas"></div>
-            <div class="sillas_escritorio"></div>
+        
+        <section class="galeria">
+            <h3>LINEA DE PRODUCTOS</h3>
+            <div class="elementos-galeria">
+                <div class="escritorio"></div>
+                <div class="mesas"></div>
+                <div class="sillas"></div>
+                <div class="sillas_escritorio"></div>
+                <h3>Escritorios</h3>
+                <h3>Mesas</h3>
+                <h3>Sillas</h3>
+                <h3>Sillas de escritorio</h3>
+            </div>
+
+            <div class="elementos-galeria">
+                <div class="infantil"></div>
+                <div class="hogar"></div>
+                <div class="repisas"></div>
+                <div class="varios"></div>
+                <h3>Infantil</h3>
+                <h3>Hogar</h3>
+                <h3>repisas</h3>
+                <h3>Varios</h3>
+            </div>
         </section>
-        <section class="gallery">
-            <h3>Escritorios</h3>
-            <h3>Mesas</h3>
-            <h3>Sillas</h3>
-            <h3>Sillas de escritorio</h3>
-        </section>
-        <section class="gallery">
-            <div class="infantil"></div>
-            <div class="hogar"></div>
-            <div class="repisas"></div>
-            <div class="varios"></div>
-        </section>
-        <section class="gallery">
-            <h3>Infantil</h3>
-            <h3>Hogar</h3>
-            <h3>repisas</h3>
-            <h3>Varios</h3>
-        </section>
+
         <section class="destacados">
             <h1>Productos destacados.</h1>
             <h3>Dale un toque de arte a tu espacio con los productos favoritos.</h3>
@@ -59,15 +63,15 @@
                         <h2>Escritorio Homme Office</h2>
                     </strong>
                     <h4>$4799 <strike>$5999</strike></h4>
-                    <h6>Impuesto incluido. Los gastos de envío se calculan en la pantalla de pagos.</h6>
+                    <h3>Impuesto incluido. Los gastos de envío se calculan en la pantalla de pagos.</h3>
                     <br>
                     <form action="/action_page.php">
                         <label for="type">Color</label>
                         <select name="Color" id="cars">
-                            <option value="volvo">Nogal</option>
-                            <option value="saab">Blanco</option>
-                            <option value="opel">Negro</option>
-                            <option value="audi">Gris</option>
+                            <option value="nogal">Nogal</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="negro">Negro</option>
+                            <option value="gris">Gris</option>
                         </select>
                         <br>
                         <br>
@@ -80,26 +84,29 @@
                         <div class="links twitter"></div>
                         <div class="links pin"></div>
                     </form>
-
                 </div>
             </div>
         </section>
         <section class="registro">
-            <h1>REGÍSTRATE</h1>
-            <h3>PARA OBTENER: Promociones, los nuevos lanzamientos,productos exclusivos y mucho más.</h3>
-            <div class="datos">
-                <form action="/action_page.php">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Tu nombre"" name=" nombre">
-                    <br><br>
-                    <label for="correo ">Correo</label>
-                    <input type="text" id="correo" name="correo" placeholder="tucorreo@gmail.com"">
-                    <br><br>
-                    <br><br>
-                    <button type=" button" class="btn-3">Suscribirse</button>
-                </form>
+            <h1>REGÍSTRATE</h1><br>
+            <h3>PARA OBTENER: Promociones, los nuevos lanzamientos, <br> productos exclusivos y mucho más.</h3>
+            <div class="datos_registro">
+                <div class="datos">
+                    <form action="/action_page.php">
+                        <label for="name">Nombre</label>
+                        <br><br>
+                        <input type="text" id="nombre" placeholder="Tu nombre" name=" nombre">
+                        <br><br>
+                        <label for="correo ">Correo</label>
+                        <br><br>
+                        <input type="text" id="correo" name="correo" placeholder="tucorreo@gmail.com">
+                        <br><br>
+                        <br><br>
+                        <button type=" button" class="btn-2">Suscribirse</button>
+                    </form>
+                </div>
+                <div class="hotsale"></div>
             </div>
-            <div class="hotsale"></div>
         </section>
         <section class="adicionales">
             <div class="hechoEnMexico"></div>
@@ -107,51 +114,47 @@
             <div class="ecoFriendly"></div>
         </section>
     </main>
-    <footer class="pie">
-        <div class="cabecera-pie">
-            <nav class="menus">
+    <footer class="apie">
+        <div class="columnaPrincipal">
+            <nav>
                 <ul>
-                    <li><a href="#">BOLETIN</a></li>
-                    <li><a href="#">MENU</a></li>
-                    <li><a href="#">NAVEGACION</a></li>
-                    <li><a href="#">CONECTARSE</a></li>
+                    <li><a href="#">BOLETIN</a></li><br>
+                </ul>
+            </nav>
+            <form class="menu" action="/action_page.php">
+                <p>REGÍSTRATE GRATIS PARA OBTENER PROMOCIONES, <br> LOS NUEVOS LANZAMIENTOS Y MÁS… </p>
+
+                <input type="text" id="correo" name="correo" placeholder="tucorreo@gmail.com"">
+             <br>
+             <button type=" button" class="btn-3">Suscribirse</button>
+
+            </form>
+        </div>
+        <div class="columnaPrincipal">
+            <li><a href="#">MENU</a></li><br><br>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">CONTACTO</a></li><br>
+                    <li><a href="#">PROYECTOS</a></li><br>
+                    <li><a href="#">OFERTAS</a></li><br>
                 </ul>
             </nav>
         </div>
-        <div class="gallery">
-            <div class="columna registro">
-            <REGÍSTRATE GRATIS PARA <br>
-                    OBTENER PROMOCIONES,LOS <br>
-                    NUEVOS LANZAMIENTOS Y MÁS… </>
-                 <form action="/action_page.php">
-                    <input type="text" id="correo" name="correo" placeholder="tucorreo@gmail.com"">
-                    <br>
-                    <br>
-                    <button type=" button" class="btn-2">Suscribirse</button>
-                </form> 
-            </div>
-            <div class="menu">
-                <nav class="columna">
-                    <ul>
-                        <li><a href="#">CONTACTO</a></li>
-                        <li><a href="#">PROYECTOS</a></li>
-                        <li><a href="#">OFERTAS</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="navegacion">
-            <nav class="menu columna">
+        <div class="columnaPrincipal">
+            <li><a href="#">NAVEGACION</a></li><br><br>
+            <nav class="menu">
                 <ul>
-                    <li><a href="#">BUSQUEDA</a></li>
-                    <li><a href="#">TERMINOS Y CONDICIONES</a></li>
+                    <li><a href="#">BUSQUEDA</a></li><br>
+                    <li><a href="#">TERMINOS Y CONDICIONES</a></li><br>
                 </ul>
-                </nav>
+            </nav>
+        </div>
+        <div class="columnaPrincipal ">
+            <li><a href="#">CONECTARSE</a></li>
+            <div class="icons ">
+                <a href="#"><img src="./img/icons8-facebook.svg" alt=""></a>
+                <a href="#"><img src="./img/icons8-instagram.svg" alt=""></a>
             </div>
-            <div id="conectarse" class="columna">
-                <h6>icon 1</h6>
-                <h6>icon 2</h6>
-            </div>
-
         </div>
     </footer>
 </body>

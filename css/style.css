@@ -3,48 +3,58 @@ html,body{
     margin: 0px;
     background-color: white;
 }
+
 header, footer{
     background-color: rgb(20, 129, 196);
     
 }
-.cabecera-pie nav ul{
-    display: grid;
-    grid-gap: 2px;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
-    align-items:stretch;
-    place-items: start;
-    padding: 25px;
-    list-style-type: none;
-    margin: 0px;
+
+a,p{
+  text-decoration: none;
+  color:white;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 500;
+}
+.cabecera nav ul{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 25px;
+  margin: 0px;
+  list-style-type: none;
   }
-  a{
-    text-decoration: none;
-    color:white;
-  }
+  
   h1,h2,h3{
     color: rgb(20, 129, 196);
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 500;
   }
   main h4{
     color: rgb(4, 4, 4);
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
   }
   h4 strike{
     color: rgb(100, 97, 97);
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
   }
   .jumbotron{
     min-width: 100vh;
     min-height: 100vh;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: url('../img/jumbotron.jpg');
   }
-  .gallery {
+  .elementos-galeria {
     display: grid;
+    grid-template-rows: auto auto ;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
     grid-gap: 8px;
-    place-items: strech;  
+    place-content: space-around;
+    text-align: center;
 }
-.gallery h3{
+.galerias h3{
   color: rgb(20, 129, 196);
   text-align: center;
 }
@@ -86,26 +96,43 @@ header, footer{
   background-image: url('../img/variados.jpg');
   background-position: center;
 }
-.producto, .registro{
+.producto, .datos_registro{
   display: grid;
   flex-direction: column;
   grid-template-columns: auto auto;
+  
+  grid-area: auto;
   grid-gap: 8px;
+  text-align: left;
+}
+.datos_registro{
+  align-items: right;
+  text-align: left;
+}
+.registro label{
+  color: #00a8e8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.registro input{
+  background-color: #fbfdfe;
+  color: #00a8e8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 35px 150px
+}
+.registro, .destacados, .adicionales, .galeria{
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .imagen, .hotsale{
-  min-height:500px;
+  min-height:200px;
   min-width:300px;
   background-size:contain;  
   background-position: center;
   background-repeat: no-repeat;
-  padding: 150px;
+  margin: 0 20;
 }
-.imagen{
-  background-image: url('../img/destacado.jpg');
-}
-.detalles{
-  padding: 150px;
-}
+
 button{
   background-color: #fbfdfe;
   color: #00a8e8;
@@ -122,6 +149,11 @@ button{
   background-color: #00a8e8;
   color: #fbfdfe;
   padding: 15px 52px;
+}
+.btn-3{
+  background-color: #f4f4f4;
+  color: #00a8e8;
+  padding: 15px 62px;
 }
 .links{
 display:inline-block;
@@ -143,9 +175,31 @@ margin: 20px;
   background-image: url('../img/pin.PNG');
 }
 .hotsale{
-  background-image: url('../img/hotsale.PNG');
+  background-image: url('../img/hotsale.png');
   padding: 0 ;
-  background-position: rightf;
+  margin-right: 100px;
+  background-size: contain;
+}
+.datos{
+  margin-left: 100px;
+  margin-right: 0px;
+ }
+ .destacados > h1,h3   {
+  margin-left: 100px;
+  margin-right: 0px;
+ } 
+ .registro > h1   {
+  margin-left: 100px;
+  margin-right: 0px;
+ }
+.datos_registro > h1,h3   {
+    margin-left: 100px;
+    margin-right: 0px;
+   }
+.imagen{
+  background-image: url('../img/destacado.jpg');
+  align-items:center;
+  margin-left: 50px;
 }
 .adicionales{
   display: grid;
@@ -153,6 +207,8 @@ margin: 20px;
   grid-template-columns: auto auto auto;
   grid-gap: 8px;
   padding-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 .hechoEnMexico, .preciosBajos, .ecoFriendly {
   min-height:300px;
@@ -172,24 +228,33 @@ margin: 20px;
 .ecoFriendly{
   background-image: url('../img/ecofriendly.JPG');
 }
-footer{
-  padding-bottom: 200px;
-  padding-left:50px;
+.columnaPrincipal nav ul {
   list-style-type: none;
-  grid-gap:50px;
-  
+  margin: 0;
+  padding:0px;
 }
-.columna{
-  padding-left: 0px;
-  color: white;
-  
-  list-style-type: none;
+.menu li a, p{
+  margin-bottom: 0;
+  padding:0px;
+  width:250px;
 }
-.columna nav ul{
-  display: grid;
+
+.menu, .columnaPrincipal{
+  display: flex;
   flex-direction: column;
-  grid-template-columns: auto;
-  grid-gap: 0px;
-  padding-top: 0px;
+  justify-content:start;
+  text-align: left;
+  flex-wrap: nowrap;
   list-style-type: none;
+  
+}
+
+.apie,.icons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 0;
+  padding-top:40px;
+  padding-bottom:100px;
 }
